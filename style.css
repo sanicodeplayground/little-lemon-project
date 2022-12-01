@@ -1,0 +1,202 @@
+/*Responsive design*/
+@media only screen and (max-device-width: 480px) {
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e8e593b5;
+  font-family: 'Markazi Text', sans-serif;
+  font-size: 16px;
+  color: #000000;
+  margin-top: 3rem 5%;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3{
+  font-size: 1.9rem;
+}
+h4{
+  font-size: 1.7rem;
+}
+h5{
+  font-size: 1.6rem;
+}
+p{
+  font-size: 1.5rem;
+  color: #5c6467;
+  line-height: 22px;       
+}
+
+header > img {
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70px;
+  height: auto;
+}
+nav {
+    margin: 1rem 0 0 0;
+    padding: 0.5rem;
+    font-size: 2rem;
+    background-color: #eeeeb7;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+nav li {
+  display: inline-block;
+  margin-right: 5rem;
+}
+nav a {
+  text-decoration: none;
+  color: #555353;
+}
+nav a:hover {
+  box-shadow: 3px 0 15px #808080;
+}
+nav a:active {
+  color:  #F5EDED;
+  background-color: #373232;
+  text-decoration: none;
+}
+section {
+  display: flex;
+}
+article {
+  flex: 1;
+}
+footer {
+  display: flex;
+  padding: 20px;
+}
+footer div {
+  flex: 1;
+}
+/*Promotion*/
+.promotion-banner {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  text-align: center;
+}
+.promotion-image {
+  background-image: url(petr-sevcovic-qE1jxYXiwOA-unsplash.jpg);
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-position: center;
+  background-color: #F0F0A3;
+  box-shadow: inset 0 0 0 1000px rgb(32 39 25 / 59%);
+}
+.promotion-banner > h1 {
+  font-size: 6rem;
+  line-height: 60px;
+  letter-spacing: 0.08em;
+  margin: 100px 0 10px 0;
+  color: #F4CE14;
+}
+.promotion-banner > p {
+  font-size: 4rem;
+  line-height: 50px;
+  color: #F4CE14;
+}
+/*3 columns*/
+#food {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.recipes {
+  margin: 20px 10px;
+  padding: 10px;
+  text-align: left;
+  background-color: #F0E096;
+  border-radius: 5px;
+}
+.recipes:hover {
+  background-color: #EEDE8D;
+}
+.recipes img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 3px;
+}
+.recipe-title {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 15px;
+}
+.recipe-descr {
+  padding: 15px;     
+}
+.full-menu {
+  padding: 15px 15px 0 15px;
+  font-size: 1.5rem;
+  color: #239d41;
+  text-decoration: underline;
+  transition: .5s ease-in-out;
+}
+.full-menu:link {
+  text-decoration: none;
+}
+.full-menu:hover {
+  text-decoration: underline;
+  font-size: 2rem;
+}
+.full-menu:active {
+  color: #808080;
+}
+
+/*About*/
+.container {
+  background-color: #F1EBCD;
+  width: 50%;
+  height: fit-content;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #dcdc1b;
+}
+.we-are-title {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.we-are-p {
+  color: #5c6467;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+/*Footer*/
+footer img {
+  width: 150px;
+}
+footer p {
+  padding-right: 30px;
+  margin-top: 20px;
+  text-align: right;
+}
