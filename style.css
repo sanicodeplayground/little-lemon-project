@@ -1,39 +1,41 @@
-/*Responsive design*/
-@media only screen and (max-device-width: 480px) {
-
-}
-
+/* Mobile-first design */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  background-color: #e8e593b5;
-  font-family: 'Markazi Text', sans-serif;
+  background-color: #f5f5f5;
+  font-family: "Markazi Text", sans-serif;
   font-size: 16px;
   color: #000000;
-  margin-top: 3rem 5%;
 }
+
 h1 {
   font-size: 3rem;
 }
+
 h2 {
   font-size: 2rem;
 }
-h3{
+
+h3 {
   font-size: 1.9rem;
 }
-h4{
+
+h4 {
   font-size: 1.7rem;
 }
-h5{
+
+h5 {
   font-size: 1.6rem;
 }
-p{
+
+p {
   font-size: 1.5rem;
   color: #5c6467;
-  line-height: 22px;       
+  line-height: 22px;
 }
 
 header > img {
@@ -44,54 +46,55 @@ header > img {
   width: 70px;
   height: auto;
 }
+
 nav {
-    margin: 1rem 0 0 0;
-    padding: 0.5rem;
-    font-size: 2rem;
-    background-color: #eeeeb7;
+  margin: 1rem 0 0 0;
+  padding: 0.5rem;
+  font-size: 2rem;
+  background-color: #999999;
+  color: #ffffff;
 }
+
 nav ul {
   list-style: none;
   text-align: center;
   top: 0;
   width: 100%;
 }
+
 nav li {
   display: inline-block;
-  margin-right: 5rem;
+  margin-right: 2rem;
 }
+
 nav a {
   text-decoration: none;
-  color: #555353;
+  color: #ffffff;
 }
+
 nav a:hover {
-  box-shadow: 3px 0 15px #808080;
+  background-color: #555555;
 }
+
 nav a:active {
-  color:  #F5EDED;
-  background-color: #373232;
-  text-decoration: none;
+  color: #ffffff;
+  background-color: #333333;
 }
+
 section {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-article {
-  flex: 1;
-}
-footer {
-  display: flex;
-  padding: 20px;
-}
-footer div {
-  flex: 1;
-}
-/*Promotion*/
+
+/* Promotion */
 .promotion-banner {
   width: 100%;
-  height: 400px;
+  height: 300px;
   position: relative;
   text-align: center;
 }
+
 .promotion-image {
   background-image: url(petr-sevcovic-qE1jxYXiwOA-unsplash.jpg);
   position: absolute;
@@ -102,37 +105,52 @@ footer div {
   height: 100%;
   z-index: -1;
   background-position: center;
-  background-color: #F0F0A3;
+  background-color: #666666;
   box-shadow: inset 0 0 0 1000px rgb(32 39 25 / 59%);
 }
+
 .promotion-banner > h1 {
-  font-size: 6rem;
+  font-size: 4rem;
   line-height: 60px;
   letter-spacing: 0.08em;
-  margin: 100px 0 10px 0;
-  color: #F4CE14;
+  margin: 50px 0 10px 0;
+  color: #ffffff;
 }
+
 .promotion-banner > p {
-  font-size: 4rem;
+  font-size: 2.5rem;
   line-height: 50px;
-  color: #F4CE14;
+  color: #ffffff;
 }
-/*3 columns*/
-#food {
+
+/* 3 columns */
+
+.recipe-grid {
   width: 100%;
   height: auto;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
 }
+
 .recipes {
-  margin: 20px 10px;
-  padding: 10px;
-  text-align: left;
-  background-color: #F0E096;
+  max-width: 100%;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: #fff8ea;
   border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
 }
+
 .recipes:hover {
-  background-color: #EEDE8D;
+  transform: translateY(-5px);
 }
+
 .recipes img {
   width: 100%;
   height: 200px;
@@ -140,63 +158,103 @@ footer div {
   object-position: center;
   border-radius: 3px;
 }
+
 .recipe-title {
   font-size: 2rem;
   font-weight: 500;
   line-height: 24px;
   padding: 15px;
+  margin: 1rem 0;
 }
+
 .recipe-descr {
-  padding: 15px;     
+  padding: 15px;
+  margin-bottom: 1rem;
 }
+
 .full-menu {
-  padding: 15px 15px 0 15px;
+  display: inline-block;
+  padding: 15px;
   font-size: 1.5rem;
   color: #239d41;
   text-decoration: underline;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
+
 .full-menu:link {
   text-decoration: none;
 }
+
 .full-menu:hover {
   text-decoration: underline;
   font-size: 2rem;
 }
+
 .full-menu:active {
   color: #808080;
 }
 
-/*About*/
+/* About */
 .container {
-  background-color: #F1EBCD;
-  width: 50%;
-  height: fit-content;
-  text-align: center;
-  margin: auto;
-  padding: 10px;
+  color: #ffffff;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 4rem auto;
+  padding: 1rem;
   border: 1px solid #dcdc1b;
+  text-align: center;
 }
+
 .we-are-title {
   font-size: 2rem;
   font-weight: 500;
   line-height: 24px;
   padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #8d7842;
 }
+
 .we-are-p {
-  color: #5c6467;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  color: #5c5c5c;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   padding: 10px;
 }
-/*Footer*/
+
+/* /Footer/ */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ececec;
+}
+
 footer img {
   width: 150px;
+  height: auto;
+  margin: 0.5rem;
 }
+
 footer p {
-  padding-right: 30px;
-  margin-top: 20px;
+  font-size: 1.2rem;
+  margin: 0.5rem;
   text-align: right;
+}
+
+/* Responsive design */
+@media only screen and (min-width: 600px) {
+  .recipe-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem 0;
+  }
+  .recipes {
+    max-width: 350px;
+  }
 }
